@@ -10,7 +10,7 @@ class Inventory:
         else:
             print("Inventory is full! Remove some item to add other item inside!")
 
-    def _remove_from_inventory(self, item_name) -> None:
+    def _remove_from_inventory(self, item_name: str) -> None:
         if len(self.inventory) > 0:
             self.inventory.remove(item_name)
         else:
